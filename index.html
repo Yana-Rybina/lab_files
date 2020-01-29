@@ -5,32 +5,38 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Единый центр записи</title>
 </head>
 <!--Здесь только html разметка с без использования стилизации-->
 <body>
-    <header >
+    <header class="header" id="header">
         <!--Картинки logo и phone-square сами по себе белые, поэтому на белом фоне не видны-->
-        <div>
-            <figure>
-                <img src="img/Logo.png" alt="logo">
-                <figcaption>Единый центр записи</figcaption>
-            </figure>
-        </div>
-        <div>
-            <img src="img/phone-square.png" alt="icon-phone">
-            <p>80300 5000</p>
-        </div>
-        <div>
-            <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Услуги</a></li>
-                <li><a href="#">Клиники и кабинеты</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Статьи</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
+        <div class="container">
+            <div class="logo">
+                <figure>
+                    <img src="img/Logo.png" alt="logo">
+                    <figcaption class="name_logo">Единый <br>Центр Записи</figcaption>
+                </figure>
+            </div>
+            <div class="nav">
+                <div class="tel">
+                    <!--<img src="img/phone-square.png" alt="icon-phone">-->
+                    <a href="tel:+803005000">80300 5000</a>
+                </div>
+                <div>
+                    <ul class="menu">
+                        <li><a href="#" class="main">Главная</a></li>
+                        <li><a href="#" class="arrow">Услуги</a></li>
+                        <li><a href="#">Клиники и кабинеты</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Статьи</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
     <section>
