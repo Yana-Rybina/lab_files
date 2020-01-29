@@ -1,0 +1,87 @@
+.header {
+    background-color: #33cccc;
+    position: fixed;
+    width: 100%;
+}
+.container {
+    margin: 0 7%;
+    padding: 25px 0;
+    display: flex;
+
+}
+
+figure {
+    box-sizing: border-box;
+}
+
+.name_logo{
+    font-family: Calibri bold;
+    font-size: 14pt;
+    color: white;
+    display: inline-block;
+    width: 140px;
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+    margin-left: 10px;
+    text-align: justify;
+
+}
+
+.logo img{
+    height: 45px;
+    float: left;
+}
+
+.nav {
+    display: block;
+    margin-left: auto;
+
+}
+.tel {
+
+}
+
+.tel a{
+    text-decoration: none;
+    color: white;
+    font-size: 12pt;
+    font-family: Tahoma bold;
+
+}
+
+.tel a::before{
+    content: url(../img/phone-square.png);
+    margin-right: 10px;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
+.menu {
+    display: flex;
+    box-sizing: border-box;
+
+}
+
+.menu a{
+    text-decoration: none;
+    font-family: Calibri;
+    font-size: 12pt;
+    color: #494848;
+    padding-right: 15px;
+}
+
+.menu li{
+    list-style-type: none;
+}
+.menu .main{
+    color: white;
+}
+
+.menu .arrow::after{
+    content: "↓";
+
+}
+
+
