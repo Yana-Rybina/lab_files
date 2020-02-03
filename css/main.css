@@ -2,28 +2,31 @@
     background-color: #33cccc;
     position: fixed;
     width: 100%;
+    padding-top: 20px;
 }
+.container, .banner, .advantages {
+    margin: 0 8%;
+}
+
 .container {
-    margin: 0 7%;
-    padding: 25px 0;
     display: flex;
 
 }
 
 figure {
     box-sizing: border-box;
+    margin: 0;
 }
 
 .name_logo{
-    font-family: Calibri bold;
-    font-size: 14pt;
+    font-family: Calibri;
+    font-size: 18px;
     color: white;
     display: inline-block;
     width: 140px;
     letter-spacing: 0.1em;
     line-height: 1.2em;
     margin-left: 10px;
-    text-align: justify;
 
 }
 
@@ -33,18 +36,18 @@ figure {
 }
 
 .nav {
-    display: block;
+    /*display: block;*/
     margin-left: auto;
 
 }
 .tel {
-
+    text-align: right;
 }
 
 .tel a{
     text-decoration: none;
     color: white;
-    font-size: 12pt;
+    font-size: 16px;
     font-family: Tahoma bold;
 
 }
@@ -61,13 +64,12 @@ ul {
 .menu {
     display: flex;
     box-sizing: border-box;
-
 }
 
 .menu a{
     text-decoration: none;
     font-family: Calibri;
-    font-size: 12pt;
+    font-size: 16px;
     color: #494848;
     padding-right: 15px;
 }
@@ -75,13 +77,113 @@ ul {
 .menu li{
     list-style-type: none;
 }
+
 .menu .main{
     color: white;
 }
 
 .menu .arrow::after{
     content: "↓";
+}
+.banner_bg {
+    background: rgba(102,163,210,1);
+    background: -moz-linear-gradient(left, rgba(102,163,210,1) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(102,163,210,1)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(left, rgba(102,163,210,1) 0%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(left, rgba(102,163,210,1) 0%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(left, rgba(102,163,210,1) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to right, rgba(102,163,210,1) 0%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66a3d2', endColorstr='#ffffff', GradientType=1 );
+    padding-top: 70px;
+}
+
+.banner {
+    height: 480px;
+}
+
+.doc {
+    height: 480px;
+    width: 740px;
+    float: left;
+}
+
+.info {
+    position: absolute;
+    text-align: right;
+    padding-top: 100px;
+    padding-left: 600px;
+    right: 8%;
+    font-family: Calibri;
+    font-size: 18px;
+    color: #494848;
+    line-height: 1.2em;
+    letter-spacing: 0.05em;
+    width: 730px;
+}
+
+.callback {
+    font-family: "Trebuchet MS";
+    font-size: 24px;
+    text-align: right;
+    line-height: 1em;
+    padding-top: 280px;
+    margin-bottom: 60px;
+}
+
+.banner form{
+    display: flex;
+    justify-content: flex-end;
 
 }
 
+.banner input, button{
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 8px;
+}
+.banner input{
+    width: 150px;
+    border: 0;
+}
+.banner button{
+    border: #1d7373;
+    background-color: #1d7373;
+}
+
+.advantages {
+    display: flex;
+    text-align: center;
+    font-family: "Trebuchet MS";
+    color: white;
+    /*padding-top: 60px;*/
+}
+.advantages p{
+    font-size: 12px;
+    line-height: 1.8em;
+}
+
+.advan_treat, .advan_help, .advan_staff, .advan_doc{
+    box-sizing: content-box;
+    padding: 40px;
+
+}
+.advan_treat{
+    background-color: #1d7373;
+}
+
+.advantages img {
+    background: url("../img/icon1_bg.png") no-repeat center;
+    padding: 15px 20px;
+}
+
+.advan_help {
+    background-color: #009999;
+}
+
+.advan_staff {
+    background-color: #33cccc;
+}
+.advan_doc {
+    background-color: #5ccccc;
+}
 

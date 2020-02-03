@@ -9,10 +9,8 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Единый центр записи</title>
 </head>
-<!--Здесь только html разметка с без использования стилизации-->
 <body>
     <header class="header" id="header">
-        <!--Картинки logo и phone-square сами по себе белые, поэтому на белом фоне не видны-->
         <div class="container">
             <div class="logo">
                 <figure>
@@ -22,7 +20,6 @@
             </div>
             <div class="nav">
                 <div class="tel">
-                    <!--<img src="img/phone-square.png" alt="icon-phone">-->
                     <a href="tel:+803005000">80300 5000</a>
                 </div>
                 <div>
@@ -39,45 +36,43 @@
             </div>
         </div>
     </header>
-    <section>
-        <div>
-            <img src="img/doctor.png" alt="doctor">
-        </div>
-        <div>
-            <p>
-                Всю необходимую информацию о том, как и в каком центре
-                сделать МРТ, КТ и рентген исследованиях, cравнить интересующие
-                Вас клиники, цены на диагностику и порядок прохождения
-                процедур, а также записаться на исследование можно по
+    <section class="banner_bg" id="banner">
+        <div class="banner">
+            <img src="img/doctor.png" alt="doctor" class="doc">
+                <p class="info">
+                Всю необходимую информацию о том, как и в каком центре <br>
+                сделать МРТ, КТ и рентген исследованиях, cравнить интересующие <br>
+                Вас клиники, цены на диагностику и порядок прохождения <br>
+                процедур, а также записаться на исследование можно по <br>
                 телефону 8 (812) 385-77-56
-            </p>
-            <p>
-                Оставьте свой номер, а мы <br>
-                Вам перезвоним
-            </p>
-            <form action="#">
-                <input type="tel" name="tel_number" placeholder="+380">
-                <button>Отправить</button>
-            </form>
+                </p>
+                <p class="callback">
+                <b>Оставьте свой номер, а мы <br>
+                    Вам перезвоним</b>
+                </p>
+                <form action="#">
+                    <input type="tel" name="tel_number" placeholder="+380">
+                    <button>Отправить</button>
+                </form>
         </div>
     </section>
-    <section>
-        <div>
+    <section class="advantages">
+        <div class="advan_treat">
             <img src="img/icon1.png" alt="icon1">
             <h4>Best Treatment</h4>
             <p>Sed ut perspiciatis unde omnis iste natus <br> error sit voluptatem accusantium dolorem- <br> que laudantium.</p>
         </div>
-        <div>
+        <div class="advan_help">
             <img src="img/icon2.png" alt="icon2">
             <h4>Emergency Help</h4>
             <p>Sed ut perspiciatis unde omnis iste natus <br> error sit voluptatem accusantium dolorem- <br> que laudantium.</p>
         </div>
-        <div>
+        <div class="advan_staff">
             <img src="img/icon3.png" alt="icon3">
             <h4>Medical Staff</h4>
             <p>Sed ut perspiciatis unde omnis iste natus <br> error sit voluptatem accusantium dolorem- <br> que laudantium.</p>
         </div>
-        <div>
+        <div class="advan_doc">
             <img src="img/icon4.png" alt="icon4">
             <h4>Qualified Doctors</h4>
             <p>Sed ut perspiciatis unde omnis iste natus <br> error sit voluptatem accusantium dolorem- <br> que laudantium.</p>
