@@ -1,10 +1,11 @@
 .header {
     background-color: #33cccc;
     position: fixed;
+    z-index: 1;
     width: 100%;
     padding-top: 20px;
 }
-.container, .banner, .advantages {
+.container, .banner, .advantages, .clinics{
     margin: 0 8%;
 }
 
@@ -36,7 +37,6 @@ figure {
 }
 
 .nav {
-    /*display: block;*/
     margin-left: auto;
 
 }
@@ -71,7 +71,7 @@ ul {
     font-family: Calibri;
     font-size: 16px;
     color: #494848;
-    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .menu li{
@@ -94,11 +94,12 @@ ul {
     background: -ms-linear-gradient(left, rgba(102,163,210,1) 0%, rgba(255,255,255,1) 100%);
     background: linear-gradient(to right, rgba(102,163,210,1) 0%, rgba(255,255,255,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66a3d2', endColorstr='#ffffff', GradientType=1 );
-    padding-top: 70px;
+    padding-top: 75px;
 }
 
 .banner {
     height: 480px;
+    position: relative;
 }
 
 .doc {
@@ -110,9 +111,8 @@ ul {
 .info {
     position: absolute;
     text-align: right;
-    padding-top: 100px;
-    padding-left: 600px;
-    right: 8%;
+    top: 100px;
+    right: 0;
     font-family: Calibri;
     font-size: 18px;
     color: #494848;
@@ -155,11 +155,12 @@ ul {
     text-align: center;
     font-family: "Trebuchet MS";
     color: white;
-    /*padding-top: 60px;*/
+    margin-bottom: 25px;
 }
 .advantages p{
     font-size: 12px;
     line-height: 1.8em;
+    text-align: center;
 }
 
 .advan_treat, .advan_help, .advan_staff, .advan_doc{
@@ -183,7 +184,106 @@ ul {
 .advan_staff {
     background-color: #33cccc;
 }
+
 .advan_doc {
     background-color: #5ccccc;
 }
+.clinics{
+    font-family: Calibri sans-serif;
+}
 
+#txt_1 {
+    border: 2px solid #e2e6e8;
+    border-radius: 5px;
+    /*border-top: 0;*/
+    padding: 45px 15px 30px 15px;
+}
+.tabs {
+    width: 100%;
+    padding-right: 10px;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+
+.tabs input {
+    display: none;
+}
+.tabs div {
+    display: none;
+    padding: 12px;
+    border: 2px solid #e2e6e8;
+}
+.tabs label {
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    color: #00af64;
+
+}
+.tabs input:checked + label {
+    color: #4d7f6a;
+    border: 2px solid #e2e6e8;
+    border-bottom: 0;
+    border-radius: 5px;
+
+}
+#tab_1:checked ~ #txt_1{
+    display: block;
+}
+
+.clinic {
+    border: 2px solid #43b1d2;
+    padding: 10px 15px;
+    width: 650px;
+
+}
+.logo_name img{
+    float: left;
+
+}
+.logo_name h3, p{
+    text-align: right;
+    margin: 0;
+}
+.logo_name h3{
+    color: #36d792;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.logo_name p{
+    color: #92cde2;
+    font-size: 12px;
+    font-style: italic;
+}
+.clinic .text{
+    text-align: left;
+    padding-top: 35px;
+    padding-bottom: 15px;
+    font-size: 16px;
+}
+.clinic .call{
+    display: flex;
+    justify-content: space-between;
+}
+.call p{
+    font-weight: bold;
+    align-self: center;
+}
+.call button{
+    background-color: #ff9640;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+}
+.all{
+    background-color: #ff9640;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 40px 550px;
+;
+}
