@@ -3,10 +3,14 @@
     position: fixed;
     z-index: 1;
     width: 100%;
-    padding-top: 20px;
+    padding-top: 10px;
 }
-.container, .banner, .advantages, .clinics{
+.borders{
     margin: 0 8%;
+}
+button:hover{
+    opacity: .7;
+    cursor: pointer;
 }
 
 .container {
@@ -14,16 +18,19 @@
 
 }
 
-figure {
-    box-sizing: border-box;
+.logo{
+    display: flex;
+    align-items: center;
     margin: 0;
+
 }
 
 .name_logo{
     font-family: Calibri;
+    font-weight: bold;
     font-size: 18px;
     color: white;
-    display: inline-block;
+    text-align: left;
     width: 140px;
     letter-spacing: 0.1em;
     line-height: 1.2em;
@@ -33,7 +40,7 @@ figure {
 
 .logo img{
     height: 45px;
-    float: left;
+
 }
 
 .nav {
@@ -48,7 +55,8 @@ figure {
     text-decoration: none;
     color: white;
     font-size: 16px;
-    font-family: Tahoma bold;
+    font-family: Tahoma;
+    font-weight: bold;
 
 }
 
@@ -113,7 +121,7 @@ ul {
     text-align: right;
     top: 100px;
     right: 0;
-    font-family: Calibri;
+    font-family: Calibri, sans-serif;
     font-size: 18px;
     color: #494848;
     line-height: 1.2em;
@@ -122,7 +130,7 @@ ul {
 }
 
 .callback {
-    font-family: "Trebuchet MS";
+    font-family: "Trebuchet MS", sans-serif;
     font-size: 24px;
     text-align: right;
     line-height: 1em;
@@ -153,7 +161,7 @@ ul {
 .advantages {
     display: flex;
     text-align: center;
-    font-family: "Trebuchet MS";
+    font-family: "Trebuchet MS", sans-serif;
     color: white;
     margin-bottom: 25px;
 }
@@ -163,9 +171,9 @@ ul {
     text-align: center;
 }
 
-.advan_treat, .advan_help, .advan_staff, .advan_doc{
+.box{
     box-sizing: content-box;
-    padding: 40px;
+    padding: 45px;
 
 }
 .advan_treat{
@@ -189,7 +197,8 @@ ul {
     background-color: #5ccccc;
 }
 .clinics{
-    font-family: Calibri sans-serif;
+    font-family: Calibri, sans-serif;
+    margin-bottom: 70px;
 }
 
 #txt_1 {
@@ -197,6 +206,10 @@ ul {
     border-radius: 5px;
     /*border-top: 0;*/
     padding: 45px 15px 30px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
 .tabs {
     width: 100%;
@@ -234,8 +247,8 @@ ul {
 .clinic {
     border: 2px solid #43b1d2;
     padding: 10px 15px;
-    width: 650px;
-
+    width: 565px;
+    margin-bottom: 25px;
 }
 .logo_name img{
     float: left;
@@ -271,7 +284,7 @@ ul {
     font-weight: bold;
     align-self: center;
 }
-.call button{
+.call button, .next button{
     background-color: #ff9640;
     color: white;
     border: 0;
@@ -279,11 +292,75 @@ ul {
     padding: 10px;
 }
 .all{
-    background-color: #ff9640;
+    background-color: #ff7400;
     color: white;
     border: 0;
     border-radius: 5px;
     padding: 10px;
-    margin: 40px 550px;
-;
+    margin: 25px 550px;
+}
+.feedback{
+    background-color: #b0ebd1;
+}
+.article-comments{
+    display: flex;
+    padding: 10px 15px;
+}
+h3{
+    font-size: 30px;
+    font-family: Calibri, sans-serif;
+    font-style: italic;
+    color: #494848;
+    font-weight: normal;
+    margin: 15px 0;
+    padding-bottom: 10px;
+}
+.article_img{
+    width: 700px;
+    display: flex;
+}
+.article_img img{
+    width: 340px;
+    height: 220px;
+
+}
+.article p, .reviews p{
+    font-size: 15px;
+    font-family: Calibri, sans-serif;
+    text-align: left;
+    padding-left: 40px;
+    align-self: center;
+    line-height: .9em;
+}
+.next{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.arrows{
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    align-self: center;
+}
+.arrows .left, .right{
+    background-color:  #cbd4e6;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 15px;
+
+}
+.reviews{
+    width: 350px;
+    margin-left: 100px;
+}
+.reviews p{
+    padding: 0;
+}
+.rev_next{
+    margin-left: 250px;
+    margin-top: 40px;
 }
