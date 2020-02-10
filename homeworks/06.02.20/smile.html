@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .creature {
+            width:  200px;
+            height: 200px;
+            border-radius: 50%;
+            background: #3ac;
+            position: relative;
+            left: 500px;
+            top: 150px;
+
+        }
+        .creature::before, .creature::after {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 40px;
+            border-radius: 50%;
+            background: #000;
+            top: 40px;
+            animation: eye 10s ease-in-out infinite;
+        }
+        .mouth {
+        	position: absolute;
+            width: 80px;
+    		height: 15px;
+    		border-radius: 30%;
+    		background: #c03f3f;
+    		top: 140px;
+    		left: 61px;
+            animation: open 10s ease-in-out infinite;
+        }
+        .creature::before { left: 55px; }
+        .creature::after { right: 55px; }
+        @keyframes eye {
+            10% { transform: scaleY(1.0); }
+            30% { transform: scaleY(0.1); }
+            50% { transform: scaleY(2); }
+            60% { transform: scaleY(3); }
+            80% { transform: scaleY(0.1); }
+        }
+        @keyframes open {
+            10% { transform: scaleX(1.0); }
+            30% { transform: scaleX(0.1); }
+            50% { transform: scaleY(2); }
+            60% { transform: scaleY(3); }
+            80% { transform: scaleY(0.1); }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="creature">
+    	<div class="mouth"></div>
+    </div>
+</body>
+</html>
