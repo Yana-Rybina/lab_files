@@ -1,0 +1,30 @@
+.flex-container{
+    display: flex;
+
+}
+.flex-block{
+    min-width: 320px;
+    background-color: aqua;
+}
+
+.flex-block2{
+    flex-grow: 2;
+    background-color: blueviolet;
+}
+
+.column{
+    column-count: 3;
+    column-rule: 1px solid green;
+    column-width: 100px;
+    column-gap: 20px;
+}
+
+@media (max-width: 320px) {
+    .flex-container{
+        flex-wrap: wrap-reverse;
+    }
+    .flex-block{
+        order:2;
+    }
+
+}

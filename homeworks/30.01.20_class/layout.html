@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            margin: 0;
+
+        }
+        header {
+            background-color: aquamarine;
+        }
+        main {
+            display: flex;
+            flex-direction: row-reverse;
+            /*justify-content: space-between;
+            align-items: center;*/
+            /*flex-wrap: wrap;
+            align-content: space-around;*/
+            height: 710px;
+        }
+
+        .right{
+            /*float: right;*/
+            /*width: 33%;*/
+            /*height: 700px;*/
+            flex-shrink: 1;
+            background-color: yellow;
+        }
+        .center{
+            /*width: 33%;*/
+            /*height: 700px;*/
+            flex-shrink: 2;
+            background-color: blueviolet;
+        }
+        .left{
+            /*float: left;*/
+            /*width: 33%;*/
+            /*height: 700px;*/
+            flex-shrink: 1;
+            background-color: beige;
+        }
+        footer{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>Head</header>
+    <main class="clearfix">
+        <div class="right">Lorem ipsum
+        </div>
+        <div class="center">Lorem  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur doloremque enim excepturi in maiores, natus nemo nulla, pariatur quidem repellat sit sunt, unde veritatis! Dolor ex fugiat illum inventore ipsum. Amet </div>
+        <div class="left">Lorem A t
+            </div>
+    </main>
+    <footer>Footer</footer>
+</body>
+</html>
