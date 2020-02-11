@@ -364,3 +364,11 @@ h3{
     margin-left: 250px;
     margin-top: 40px;
 }
+.callback2{
+    /*background-color: ;*/
+
+}
+.form{
+    display: flex;
+    justify-content: space-between;
+}
