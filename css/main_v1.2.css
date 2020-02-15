@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
     background-color: #33cccc;
     position: fixed;
@@ -5,11 +6,13 @@
     width: 100%;
     padding-top: 10px;
 }
-.borders{
+
+.borders {
     margin: 0 8%;
 }
-button:hover{
-    opacity: .7;
+
+button:hover {
+    opacity: 0.7;
     cursor: pointer;
 }
 
@@ -17,14 +20,14 @@ button:hover{
     display: flex;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
     margin: 0;
 }
 
-.name_logo{
-    font-family: Calibri;
+.name_logo {
+    font-family: Calibri, sans-serif;
     font-weight: bold;
     font-size: 18px;
     color: white;
@@ -33,73 +36,66 @@ button:hover{
     letter-spacing: 0.1em;
     line-height: 1.2em;
     margin-left: 10px;
-
 }
 
-.logo img{
+.logo img {
     height: 45px;
-
 }
 
 .nav {
     margin-left: auto;
-
 }
+
 .tel {
     text-align: right;
 }
 
-.tel a{
+.tel a {
     text-decoration: none;
     color: white;
     font-size: 16px;
     font-family: Tahoma;
     font-weight: bold;
-
 }
 
-.tel a::before{
+.tel a::before {
     content: url(../img/phone-square.png);
     margin-right: 10px;
 }
 
-ul {
+nav ul {
     padding-inline-start: 0;
 }
-
-.menu {
+nav .menu {
     display: flex;
     box-sizing: border-box;
 }
-
-.menu a{
+nav a {
     text-decoration: none;
-    font-family: Calibri;
+    font-family: Calibri, sans-serif;
     font-size: 16px;
     color: #494848;
     padding-left: 15px;
 }
-
-.menu li{
+nav li {
     list-style-type: none;
 }
-
-.menu .main{
+nav .main {
     color: white;
 }
-
-.menu .arrow::after{
+nav .arrow::after {
     content: "↓";
 }
+
 .banner_bg {
-    background: rgba(102,163,210,1);
-    background: -moz-linear-gradient(left, rgba(102,163,210,1) 0%, rgba(255,255,255,1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(102,163,210,1)), color-stop(100%, rgba(255,255,255,1)));
-    background: -webkit-linear-gradient(left, rgba(102,163,210,1) 0%, rgba(255,255,255,1) 100%);
-    background: -o-linear-gradient(left, rgba(102,163,210,1) 0%, rgba(255,255,255,1) 100%);
-    background: -ms-linear-gradient(left, rgba(102,163,210,1) 0%, rgba(255,255,255,1) 100%);
-    background: linear-gradient(to right, rgba(102,163,210,1) 0%, rgba(255,255,255,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66a3d2', endColorstr='#ffffff', GradientType=1 );
+    background: #66a3d2;
+    background: -moz-linear-gradient(left, #66a3d2 0%, white 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, #66a3d2), color-stop(100%, white));
+    background: -webkit-linear-gradient(left, #66a3d2 0%, white 100%);
+    background: -o-linear-gradient(left, #66a3d2 0%, white 100%);
+    background: -ms-linear-gradient(left, #66a3d2 0%, white 100%);
+    background: linear-gradient(to right, #66a3d2 0%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#66a3d2", endColorstr="#ffffff", GradientType=1 );
     padding-top: 75px;
 }
 
@@ -136,22 +132,23 @@ ul {
     margin-bottom: 60px;
 }
 
-.banner form{
+.banner form {
     display: flex;
     justify-content: flex-end;
-
 }
 
-.banner input, button{
+.banner input, button {
     border-radius: 3px;
     font-size: 16px;
     padding: 8px;
 }
-.banner input{
+
+.banner input {
     width: 150px;
     border: 0;
 }
-.banner button{
+
+.banner button {
     border: #1d7373;
     background-color: #1d7373;
 }
@@ -163,18 +160,19 @@ ul {
     color: white;
     margin-bottom: 25px;
 }
-.advantages p{
+
+.advantages p {
     font-size: 12px;
     line-height: 1.8em;
     text-align: center;
 }
 
-.box{
+.box {
     box-sizing: content-box;
     padding: 45px;
-
 }
-.icon_advan{
+
+.icon_advan {
     width: 55px;
     height: 55px;
     background: url("../img/icons.png") no-repeat center;
@@ -183,31 +181,40 @@ ul {
     background-color: white;
     padding: 5px;
 }
-.advan_treat{
+
+.advan_treat {
     background-color: #1d7373;
 }
-.advan_treat .icon_advan{
+
+.advan_treat .icon_advan {
     background-position: 15px 8px;
 }
+
 .advan_help {
     background-color: #009999;
 }
-.advan_help .icon_advan{
+
+.advan_help .icon_advan {
     background-position: 10px -45px;
 }
+
 .advan_staff {
     background-color: #33cccc;
 }
-.advan_staff .icon_advan{
+
+.advan_staff .icon_advan {
     background-position: 12px -105px;
 }
+
 .advan_doc {
     background-color: #5ccccc;
 }
-.advan_doc .icon_advan{
-    background-position: 13px -162px
+
+.advan_doc .icon_advan {
+    background-position: 13px -162px;
 }
-.clinics{
+
+.clinics {
     font-family: Calibri, sans-serif;
     margin-bottom: 70px;
 }
@@ -220,8 +227,8 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
 }
+
 .tabs {
     width: 100%;
     padding-right: 10px;
@@ -232,26 +239,28 @@ ul {
 .tabs input {
     display: none;
 }
+
 .tabs div {
     display: none;
     padding: 12px;
     border: 2px solid #e2e6e8;
 }
+
 .tabs label {
     display: inline-block;
     padding: 10px;
     text-align: center;
     color: #00af64;
-
 }
+
 .tabs input:checked + label {
     color: #4d7f6a;
     border: 2px solid #e2e6e8;
     border-bottom: 0;
     border-radius: 5px;
-
 }
-#tab_1:checked ~ #txt_1{
+
+#tab_1:checked ~ #txt_1 {
     display: block;
 }
 
@@ -261,48 +270,56 @@ ul {
     width: 565px;
     margin-bottom: 25px;
 }
-.logo_name img{
-    float: left;
 
+.logo_name img {
+    float: left;
 }
-.logo_name h3, p{
+
+.logo_name h3, p {
     text-align: right;
     margin: 0;
 }
-.logo_name h3{
+
+.logo_name h3 {
     color: #36d792;
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 15px;
     margin-top: 10px;
 }
-.logo_name p{
+
+.logo_name p {
     color: #92cde2;
     font-size: 12px;
     font-style: italic;
 }
-.clinic .text{
+
+.clinic .text {
     text-align: left;
     padding-top: 35px;
     padding-bottom: 15px;
     font-size: 16px;
 }
-.clinic .call{
+
+.clinic .call {
     display: flex;
     justify-content: space-between;
 }
-.call p{
+
+.call p {
     font-weight: bold;
     align-self: center;
 }
-.call button, .next button{
+
+.call button, .next button {
     background-color: #ff9640;
     color: white;
     border: 0;
     border-radius: 5px;
     padding: 10px;
 }
-.all{
+
+.all {
     background-color: #ff7400;
     color: white;
     border: 0;
@@ -310,14 +327,17 @@ ul {
     padding: 10px;
     margin: 25px 550px;
 }
-.feedback{
+
+.feedback {
     background-color: #b0ebd1;
 }
-.article-comments{
+
+.article-comments {
     display: flex;
     padding: 10px 15px;
 }
-h3{
+
+h3 {
     font-size: 30px;
     font-family: Calibri, sans-serif;
     font-style: italic;
@@ -326,78 +346,90 @@ h3{
     margin: 15px 0;
     padding-bottom: 10px;
 }
-.article_img{
+
+.article_img {
     width: 700px;
     display: flex;
 }
-.article_img img{
+
+.article_img img {
     width: 340px;
     height: 220px;
-
 }
-.article p, .reviews p{
+
+.article p, .reviews p {
     font-size: 15px;
     font-family: Calibri, sans-serif;
     text-align: left;
     padding-left: 40px;
     align-self: center;
-    line-height: .9em;
+    line-height: 0.9em;
 }
-.next{
+
+.next {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 40px;
 }
-.arrows{
+
+.arrows {
     display: flex;
     width: 100px;
     justify-content: space-between;
     align-self: center;
 }
-.arrows .left, .right{
-    background-color:  #cbd4e6;
+
+.arrows .left, .right {
+    background-color: #cbd4e6;
     width: 40px;
     height: 30px;
     text-align: center;
     line-height: 35px;
     margin-left: 15px;
-
 }
-.reviews{
+
+.reviews {
     width: 350px;
     margin-left: 100px;
 }
-.reviews p{
+
+.reviews p {
     padding: 0;
 }
-.rev_next{
+
+.rev_next {
     margin-left: 250px;
     margin-top: 40px;
 }
-.callback2{
-    background-color: #3f92d2;
 
+.callback2 {
+    background-color: #3f92d2;
 }
-.form{
+
+.form {
     display: flex;
     justify-content: space-between;
     padding: 35px 15px;
 }
-.form input, button{
+
+.form input, button {
     border-radius: 3px;
     font-size: 16px;
     padding: 8px;
 }
-.form input{
+
+.form input {
     width: 150px;
     border: 0;
 }
-.form button{
+
+.form button {
     border: #1d7373;
     background-color: #1d7373;
 }
-.form label{
+
+.form label {
     align-self: center;
     color: white;
     font-size: 22px;
@@ -406,10 +438,12 @@ h3{
     margin-right: 10px;
     letter-spacing: 1.2px;
 }
-.form form, .logo{
+
+.form form, .logo {
     align-self: center;
 }
-.form form{
+
+.form form {
     display: flex;
     justify-content: flex-end;
 }

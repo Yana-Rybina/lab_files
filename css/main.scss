@@ -1,0 +1,414 @@
+$font-main: Calibri, sans-serif;
+$color-white: white;
+$color-bg_call: #1d7373;
+$fs-12: 12px;
+$fs-16: 16px;
+
+.header {
+  background-color: #33cccc;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  padding-top: 10px;
+}
+.borders{
+  margin: 0 8%;
+}
+button:hover{
+  opacity: .7;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.name_logo{
+  font-family: $font-main;
+  font-weight: bold;
+  font-size: 18px;
+  color: $color-white;
+  text-align: left;
+  width: 140px;
+  letter-spacing: 0.1em;
+  line-height: 1.2em;
+  margin-left: 10px;
+}
+
+.logo img{
+  height: 45px;
+}
+
+.nav {
+  margin-left: auto;
+
+}
+.tel {
+  text-align: right;
+}
+
+.tel a{
+  text-decoration: none;
+  color: $color-white;
+  font-size: $fs-16;
+  font-family: Tahoma;
+  font-weight: bold;
+}
+
+.tel a::before{
+  content: url(../img/phone-square.png);
+  margin-right: 10px;
+}
+nav{
+  ul {
+    padding-inline-start: 0;
+  }
+  .menu {
+    display: flex;
+    box-sizing: border-box;
+  }
+  a{
+    text-decoration: none;
+    font-family: $font-main;
+    font-size: $fs-16;
+    color: #494848;
+    padding-left: 15px;
+  }
+  li{
+    list-style-type: none;
+  }
+  .main{
+    color: $color-white;
+  }
+  .arrow::after{
+    content: "↓";
+  }
+}
+
+.banner_bg {
+  background: rgba(102,163,210,1);
+  background: -moz-linear-gradient(left, rgba(102,163,210,1) 0%, rgba(255,255,255,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(102,163,210,1)), color-stop(100%, rgba(255,255,255,1)));
+  background: -webkit-linear-gradient(left, rgba(102,163,210,1) 0%, rgba(255,255,255,1) 100%);
+  background: -o-linear-gradient(left, rgba(102,163,210,1) 0%, rgba(255,255,255,1) 100%);
+  background: -ms-linear-gradient(left, rgba(102,163,210,1) 0%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(to right, rgba(102,163,210,1) 0%, rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66a3d2', endColorstr='#ffffff', GradientType=1 );
+  padding-top: 75px;
+}
+
+.banner {
+  height: 480px;
+  position: relative;
+}
+
+.doc {
+  height: 480px;
+  width: 740px;
+  float: left;
+}
+
+.info {
+  position: absolute;
+  text-align: right;
+  top: 100px;
+  right: 0;
+  font-family: $font-main;
+  font-size: 18px;
+  color: #494848;
+  line-height: 1.2em;
+  letter-spacing: 0.05em;
+  width: 730px;
+}
+
+.callback {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 24px;
+  text-align: right;
+  line-height: 1em;
+  padding-top: 280px;
+  margin-bottom: 60px;
+}
+
+.banner form{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.banner input, button{
+  border-radius: 3px;
+  font-size: $fs-16;
+  padding: 8px;
+}
+.banner input{
+  width: 150px;
+  border: 0;
+}
+.banner button{
+  border:$color-bg_call;
+  background-color:$color-bg_call;
+}
+
+.advantages {
+  display: flex;
+  text-align: center;
+  font-family: "Trebuchet MS", sans-serif;
+  color: $color-white;
+  margin-bottom: 25px;
+}
+.advantages p{
+  font-size: $fs-12;
+  line-height: 1.8em;
+  text-align: center;
+}
+
+.box{
+  box-sizing: content-box;
+  padding: 45px;
+
+}
+.icon_advan{
+  width: 55px;
+  height: 55px;
+  background: url("../img/icons.png") no-repeat center;
+  margin-left: 90px;
+  border-radius: 50%;
+  background-color: $color-white;
+  padding: 5px;
+}
+.advan_treat{
+  background-color: $color-bg_call;
+}
+.advan_treat .icon_advan{
+  background-position: 15px 8px;
+}
+.advan_help {
+  background-color: #009999;
+}
+.advan_help .icon_advan{
+  background-position: 10px -45px;
+}
+.advan_staff {
+  background-color: #33cccc;
+}
+.advan_staff .icon_advan{
+  background-position: 12px -105px;
+}
+.advan_doc {
+  background-color: #5ccccc;
+}
+.advan_doc .icon_advan{
+  background-position: 13px -162px
+}
+.clinics{
+  font-family: $font-main;
+  margin-bottom: 70px;
+}
+
+#txt_1 {
+  border: 2px solid #e2e6e8;
+  border-radius: 5px;
+  /*border-top: 0;*/
+  padding: 45px 15px 30px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.tabs {
+  width: 100%;
+  padding-right: 10px;
+  padding-top: 10px;
+  margin: 0 auto;
+}
+
+.tabs input {
+  display: none;
+}
+.tabs div {
+  display: none;
+  padding: 12px;
+  border: 2px solid #e2e6e8;
+}
+.tabs label {
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  color: #00af64;
+
+}
+.tabs input:checked + label {
+  color: #4d7f6a;
+  border: 2px solid #e2e6e8;
+  border-bottom: 0;
+  border-radius: 5px;
+
+}
+#tab_1:checked ~ #txt_1{
+  display: block;
+}
+
+.clinic {
+  border: 2px solid #43b1d2;
+  padding: 10px 15px;
+  width: 565px;
+  margin-bottom: 25px;
+}
+.logo_name img{
+  float: left;
+
+}
+.logo_name h3, p{
+  text-align: right;
+  margin: 0;
+}
+.logo_name h3{
+  color: #36d792;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.logo_name p{
+  color: #92cde2;
+  font-size: $fs-12;
+  font-style: italic;
+}
+.clinic .text{
+  text-align: left;
+  padding-top: 35px;
+  padding-bottom: 15px;
+  font-size: $fs-16;
+}
+.clinic .call{
+  display: flex;
+  justify-content: space-between;
+}
+.call p{
+  font-weight: bold;
+  align-self: center;
+}
+.call button, .next button{
+  background-color: #ff9640;
+  color: $color-white;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+}
+.all{
+  background-color: #ff7400;
+  color: $color-white;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 25px 550px;
+}
+.feedback{
+  background-color: #b0ebd1;
+}
+.article-comments{
+  display: flex;
+  padding: 10px 15px;
+}
+h3{
+  font-size: 30px;
+  font-family: $font-main;
+  font-style: italic;
+  color: #494848;
+  font-weight: normal;
+  margin: 15px 0;
+  padding-bottom: 10px;
+}
+.article_img{
+  width: 700px;
+  display: flex;
+}
+.article_img img{
+  width: 340px;
+  height: 220px;
+
+}
+.article p, .reviews p{
+  font-size: 15px;
+  font-family: $font-main;
+  text-align: left;
+  padding-left: 40px;
+  align-self: center;
+  line-height: .9em;
+}
+.next{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.arrows{
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+  align-self: center;
+}
+.arrows .left, .right{
+  background-color:  #cbd4e6;
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 15px;
+
+}
+.reviews{
+  width: 350px;
+  margin-left: 100px;
+}
+.reviews p{
+  padding: 0;
+}
+.rev_next{
+  margin-left: 250px;
+  margin-top: 40px;
+}
+.callback2{
+  background-color: #3f92d2;
+
+}
+.form{
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 15px;
+}
+.form input, button{
+  border-radius: 3px;
+  font-size: $fs-16;
+  padding: 8px;
+}
+.form input{
+  width: 150px;
+  border: 0;
+}
+.form button{
+  border: $color-bg_call;
+  background-color:$color-bg_call;
+}
+.form label{
+  align-self: center;
+  color: $color-white;
+  font-size: 22px;
+  font-family: $font-main;
+  font-weight: bold;
+  margin-right: 10px;
+  letter-spacing: 1.2px;
+}
+.form form, .logo{
+  align-self: center;
+}
+.form form{
+  display: flex;
+  justify-content: flex-end;
+}
