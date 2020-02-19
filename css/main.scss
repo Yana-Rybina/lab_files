@@ -1,4 +1,5 @@
 $font-main: Calibri, sans-serif;
+$margin-main-side: 8%;
 $color-white: white;
 $color-bg_call: #1d7373;
 $fs-12: 12px;
@@ -11,9 +12,7 @@ $fs-16: 16px;
   width: 100%;
   padding-top: 10px;
 }
-.borders{
-  margin: 0 8%;
-}
+
 button:hover{
   opacity: .7;
   cursor: pointer;
@@ -21,6 +20,7 @@ button:hover{
 
 .container {
   display: flex;
+  margin: 0 $margin-main-side;
 }
 
 .logo{
@@ -49,11 +49,11 @@ button:hover{
   margin-left: auto;
 
 }
-.tel {
+.nav__tel {
   text-align: right;
 }
 
-.tel a{
+.nav__a{
   text-decoration: none;
   color: $color-white;
   font-size: $fs-16;
@@ -61,15 +61,13 @@ button:hover{
   font-weight: bold;
 }
 
-.tel a::before{
+.nav__a::before{
   content: url(../img/phone-square.png);
   margin-right: 10px;
 }
-nav{
-  ul {
+.menu{
+  .menu__list {
     padding-inline-start: 0;
-  }
-  .menu {
     display: flex;
     box-sizing: border-box;
   }
@@ -80,13 +78,13 @@ nav{
     color: #494848;
     padding-left: 15px;
   }
-  li{
+  .menu__item{
     list-style-type: none;
   }
-  .main{
+  .menu__main{
     color: $color-white;
   }
-  .arrow::after{
+  .menu__arrow::after{
     content: "↓";
   }
 }
@@ -106,15 +104,16 @@ nav{
 .banner {
   height: 480px;
   position: relative;
+  margin: 0 $margin-main-side;
 }
 
-.doc {
+.banner__logo {
   height: 480px;
   width: 740px;
   float: left;
 }
 
-.info {
+.banner__text {
   position: absolute;
   text-align: right;
   top: 100px;
@@ -127,7 +126,7 @@ nav{
   width: 730px;
 }
 
-.callback {
+.banner__big-text {
   font-family: "Trebuchet MS", sans-serif;
   font-size: 24px;
   text-align: right;
@@ -136,44 +135,45 @@ nav{
   margin-bottom: 60px;
 }
 
-.banner form{
+.banner__form{
   display: flex;
   justify-content: flex-end;
 }
 
-.banner input, button{
+.form-input, .form-button{
   border-radius: 3px;
   font-size: $fs-16;
   padding: 8px;
 }
-.banner input{
+.form-input{
   width: 150px;
   border: 0;
 }
-.banner button{
+.form-button{
   border:$color-bg_call;
   background-color:$color-bg_call;
 }
 
 .advantages {
+  margin: 0 $margin-main-side;
   display: flex;
   text-align: center;
   font-family: "Trebuchet MS", sans-serif;
   color: $color-white;
   margin-bottom: 25px;
 }
-.advantages p{
+.advantages__text{
   font-size: $fs-12;
   line-height: 1.8em;
   text-align: center;
 }
 
-.box{
+.advantages__block{
   box-sizing: content-box;
   padding: 45px;
 
 }
-.icon_advan{
+.advantages__icon{
   width: 55px;
   height: 55px;
   background: url("../img/icons.png") no-repeat center;
@@ -182,36 +182,37 @@ nav{
   background-color: $color-white;
   padding: 5px;
 }
-.advan_treat{
+.treat{
   background-color: $color-bg_call;
 }
-.advan_treat .icon_advan{
+.treat .advantages__icon{
   background-position: 15px 8px;
 }
-.advan_help {
+.help {
   background-color: #009999;
 }
-.advan_help .icon_advan{
+.help .advantages__icon{
   background-position: 10px -45px;
 }
-.advan_staff {
+.staff {
   background-color: #33cccc;
 }
-.advan_staff .icon_advan{
+.staff .advantages__icon{
   background-position: 12px -105px;
 }
-.advan_doc {
+.doc {
   background-color: #5ccccc;
 }
-.advan_doc .icon_advan{
+.doc .advantages__icon{
   background-position: 13px -162px
 }
 .clinics{
+  margin: 0 $margin-main-side;
   font-family: $font-main;
   margin-bottom: 70px;
 }
 
-#txt_1 {
+.tab-content {
   border: 2px solid #e2e6e8;
   border-radius: 5px;
   /*border-top: 0;*/
@@ -228,15 +229,15 @@ nav{
   margin: 0 auto;
 }
 
-.tabs input {
+.tabs__input {
   display: none;
 }
-.tabs div {
+/*.tabs div {
   display: none;
   padding: 12px;
   border: 2px solid #e2e6e8;
-}
-.tabs label {
+}*/
+.tabs__name {
   display: inline-block;
   padding: 10px;
   text-align: center;
@@ -250,7 +251,7 @@ nav{
   border-radius: 5px;
 
 }
-#tab_1:checked ~ #txt_1{
+#tab_1:checked ~ .tab-content{
   display: block;
 }
 
@@ -260,48 +261,48 @@ nav{
   width: 565px;
   margin-bottom: 25px;
 }
-.logo_name img{
+.clinic__logo{
   float: left;
 
 }
-.logo_name h3, p{
+.clinic__logo-name h3, p{
   text-align: right;
   margin: 0;
 }
-.logo_name h3{
+.clinic__logo-name h3{
   color: #36d792;
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 15px;
   margin-top: 10px;
 }
-.logo_name p{
+.clinic__logo-name p{
   color: #92cde2;
   font-size: $fs-12;
   font-style: italic;
 }
-.clinic .text{
+.clinic__text{
   text-align: left;
   padding-top: 35px;
   padding-bottom: 15px;
   font-size: $fs-16;
 }
-.clinic .call{
+.clinic__call{
   display: flex;
   justify-content: space-between;
 }
-.call p{
+.clinic__number{
   font-weight: bold;
   align-self: center;
 }
-.call button, .next button{
+.button{
   background-color: #ff9640;
   color: $color-white;
   border: 0;
   border-radius: 5px;
   padding: 10px;
 }
-.all{
+.clinics__button{
   background-color: #ff7400;
   color: $color-white;
   border: 0;
@@ -309,32 +310,34 @@ nav{
   padding: 10px;
   margin: 25px 550px;
 }
-.feedback{
+.interesting-bg{
   background-color: #b0ebd1;
 }
-.article-comments{
+.article-reviews{
+  margin: 0 $margin-main-side;
   display: flex;
   padding: 10px 15px;
+  h3{
+    font-size: 30px;
+    font-family: $font-main;
+    font-style: italic;
+    color: #494848;
+    font-weight: normal;
+    margin: 15px 0;
+    padding-bottom: 10px;
+  }
 }
-h3{
-  font-size: 30px;
-  font-family: $font-main;
-  font-style: italic;
-  color: #494848;
-  font-weight: normal;
-  margin: 15px 0;
-  padding-bottom: 10px;
-}
-.article_img{
+
+.article__main{
   width: 700px;
   display: flex;
 }
-.article_img img{
+.article__logo{
   width: 340px;
   height: 220px;
 
 }
-.article p, .reviews p{
+.article-reviews__text{
   font-size: 15px;
   font-family: $font-main;
   text-align: left;
@@ -342,19 +345,19 @@ h3{
   align-self: center;
   line-height: .9em;
 }
-.next{
+.leaf{
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
   padding-bottom: 40px;
 }
-.arrows{
+.leaf__arrows{
   display: flex;
   width: 100px;
   justify-content: space-between;
   align-self: center;
 }
-.arrows .left, .right{
+.left, .right{
   background-color:  #cbd4e6;
   width: 40px;
   height: 30px;
@@ -367,36 +370,32 @@ h3{
   width: 350px;
   margin-left: 100px;
 }
-.reviews p{
+.reviews__text{
   padding: 0;
 }
-.rev_next{
+.reviews__arrows{
   margin-left: 250px;
   margin-top: 40px;
 }
-.callback2{
+.recall{
   background-color: #3f92d2;
-
 }
-.form{
+.recall_position{
+  margin: 0 $margin-main-side;
   display: flex;
   justify-content: space-between;
   padding: 35px 15px;
 }
-.form input, button{
-  border-radius: 3px;
-  font-size: $fs-16;
-  padding: 8px;
-}
-.form input{
+
+.form-input{
   width: 150px;
   border: 0;
 }
-.form button{
+.form-button{
   border: $color-bg_call;
   background-color:$color-bg_call;
 }
-.form label{
+.order-call{
   align-self: center;
   color: $color-white;
   font-size: 22px;
@@ -405,10 +404,10 @@ h3{
   margin-right: 10px;
   letter-spacing: 1.2px;
 }
-.form form, .logo{
+.order-form, .logo{
   align-self: center;
 }
-.form form{
+.order-form{
   display: flex;
   justify-content: flex-end;
 }

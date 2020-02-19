@@ -11,181 +11,181 @@
 </head>
 <body>
     <header class="header" id="header">
-        <div class="container borders">
+        <div class="container">
                 <figure class="logo">
                     <img src="img/Logo.png" alt="logo">
                     <figcaption class="name_logo">Единый <br>Центр Записи</figcaption>
                 </figure>
             <div class="nav">
-                <div class="tel">
-                    <a href="tel:+803005000">80300 5000</a>
+                <div class="nav__tel">
+                    <a href="tel:+803005000" class="nav__a">80300 5000</a>
                 </div>
-                <nav>
-                    <ul class="menu">
-                        <li><a href="#" class="main">Главная</a></li>
-                        <li><a href="#" class="arrow">Услуги</a></li>
-                        <li><a href="#">Клиники и кабинеты</a></li>
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Статьи</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Контакты</a></li>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#" class="menu__main">Главная</a></li>
+                        <li class="menu__item"><a href="#" class="menu__arrow">Услуги</a></li>
+                        <li class="menu__item"><a href="#">Клиники и кабинеты</a></li>
+                        <li class="menu__item"><a href="#">О нас</a></li>
+                        <li class="menu__item"><a href="#">Статьи</a></li>
+                        <li class="menu__item"><a href="#">FAQ</a></li>
+                        <li class="menu__item"><a href="#">Контакты</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <section class="banner_bg" id="banner">
-        <div class="banner borders">
-            <img src="img/doctor.png" alt="doctor" class="doc">
-                <p class="info">
+    <section class="banner_bg">
+        <div class="banner">
+            <img src="img/doctor.png" alt="doctor" class="banner__logo">
+                <p class="banner__text">
                 Всю необходимую информацию о том, как и в каком центре <br>
                 сделать МРТ, КТ и рентген исследованиях, cравнить интересующие <br>
                 Вас клиники, цены на диагностику и порядок прохождения <br>
                 процедур, а также записаться на исследование можно по <br>
                 телефону 8 (812) 385-77-56
                 </p>
-                <p class="callback">
+                <p class="banner__big-text">
                 <b>Оставьте свой номер, а мы <br>
                     Вам перезвоним</b>
                 </p>
-                <form action="#">
-                    <input type="tel" name="tel_number" placeholder="+380">
-                    <button>Отправить</button>
+                <form action="#" class="banner__form">
+                    <input type="tel" name="tel_number" placeholder="+380" class="form-input">
+                    <button class="form-button">Отправить</button>
                 </form>
         </div>
     </section>
-    <section class="advantages borders">
-        <div class="advan_treat box">
-            <div class="icon_advan"></div>
+    <section class="advantages">
+        <div class="advantages__block treat">
+            <div class="advantages__icon"></div>
             <h4>Best Treatment</h4>
-            <p>Sed ut perspiciatis unde omnis iste natus <br> error sit voluptatem accusantium doloremque laudantium.</p>
+            <p class="advantages__text">Sed ut perspiciatis unde omnis iste natus <br> error sit voluptatem accusantium doloremque laudantium.</p>
         </div>
-        <div class="advan_help box">
-            <div class="icon_advan"></div>
+        <div class="advantages__block help">
+            <div class="advantages__icon"></div>
             <h4>Emergency Help</h4>
-            <p>Sed ut perspiciatis unde omnis iste natus <br> error sit voluptatem accusantium doloremque laudantium.</p>
+            <p class="advantages__text">Sed ut perspiciatis unde omnis iste natus <br> error sit voluptatem accusantium doloremque laudantium.</p>
         </div>
-        <div class="advan_staff box">
-            <div class="icon_advan"></div>
+        <div class="advantages__block staff">
+            <div class="advantages__icon"></div>
             <h4>Medical Staff</h4>
-            <p>Sed ut perspiciatis unde omnis iste natus <br> error sit voluptatem accusantium doloremque laudantium.</p>
+            <p class="advantages__text">Sed ut perspiciatis unde omnis iste natus <br> error sit voluptatem accusantium doloremque laudantium.</p>
         </div>
-        <div class="advan_doc box">
-            <div class="icon_advan"></div>
+        <div class="advantages__block doc">
+            <div class="advantages__icon"></div>
             <h4>Qualified Doctors</h4>
-            <p>Sed ut perspiciatis unde omnis iste natus <br> error sit voluptatem accusantium doloremque laudantium.</p>
+            <p class="advantages__text">Sed ut perspiciatis unde omnis iste natus <br> error sit voluptatem accusantium doloremque laudantium.</p>
         </div>
     </section>
-    <main class="clinics borders">
+    <main class="clinics">
         <div class="tabs">
-            <input type="radio" name="inset" value="tab1" id="tab_1" checked>
-            <label for="tab_1">МРТ</label>
-            <input type="radio" name="inset" value="tab2" id="tab_2">
-            <label for="tab_2">КТ</label>
-            <input type="radio" name="inset" value="tab3" id="tab_3">
-            <label for="tab_3">РЕНТГЕН ИСЛЕДОВАНИЯ</label>
+            <input type="radio" name="inset" value="tab1" class="tabs__input" id="tab_1" checked>
+            <label for="tab_1" class="tabs__name">МРТ</label>
+            <input type="radio" name="inset" value="tab2" class="tabs__input" id="tab_2">
+            <label for="tab_2" class="tabs__name">КТ</label>
+            <input type="radio" name="inset" value="tab3" class="tabs__input" id="tab_3">
+            <label for="tab_3" class="tabs__name">РЕНТГЕН ИСЛЕДОВАНИЯ</label>
         </div>
-        <div id="txt_1">
+        <div class="tab-content">
             <div class="clinic">
-                <div class="logo_name">
-                    <img src="img/Logo_clinic.png" alt="clinic_name">
+                <div class="clinic__logo-name">
+                    <img src="img/Logo_clinic.png" alt="clinic_name" class="clinic__logo">
                     <h3>Название клиники</h3>
                     <p>Ленинский проспект, д. 160, Ленинский проспект</p>
                 </div>
-                <p class="text">Что такое текст «рыба» знают все, кто работает с версткой журналов,
+                <p class="clinic__text">Что такое текст «рыба» знают все, кто работает с версткой журналов,
                     дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
                     как контент впоследствии будет выглядеть на готовой странице, чтобы
                     увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
-                <div class="call">
-                    <p>Наш номер: +3856 0 99 66 65</p>
-                    <button>Заказать звонок</button>
+                <div class="clinic__call">
+                    <p class="clinic__number">Наш номер: +3856 0 99 66 65</p>
+                    <button class="button">Заказать звонок</button>
                 </div>
             </div>
             <div class="clinic">
-                <div class="logo_name">
-                    <img src="img/Logo_clinic.png" alt="clinic_name">
+                <div class="clinic__logo-name">
+                    <img src="img/Logo_clinic.png" alt="clinic_name" class="clinic__logo">
                     <h3>Название клиники</h3>
                     <p>Ленинский проспект, д. 160, Ленинский проспект</p>
                 </div>
-                <p class="text">Что такое текст «рыба» знают все, кто работает с версткой журналов,
+                <p class="clinic__text">Что такое текст «рыба» знают все, кто работает с версткой журналов,
                     дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
                     как контент впоследствии будет выглядеть на готовой странице, чтобы
                     увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
-                <div class="call">
-                    <p>Наш номер: +3856 0 99 66 65</p>
-                    <button>Заказать звонок</button>
+                <div class="clinic__call">
+                    <p class="clinic__number">Наш номер: +3856 0 99 66 65</p>
+                    <button class="button">Заказать звонок</button>
                 </div>
             </div>
             <div class="clinic">
-                <div class="logo_name">
-                    <img src="img/Logo_clinic.png" alt="clinic_name">
+                <div class="clinic__logo-name">
+                    <img src="img/Logo_clinic.png" alt="clinic_name" class="clinic__logo">
                     <h3>Название клиники</h3>
                     <p>Ленинский проспект, д. 160, Ленинский проспект</p>
                 </div>
-                <p class="text">Что такое текст «рыба» знают все, кто работает с версткой журналов,
+                <p class="clinic__text">Что такое текст «рыба» знают все, кто работает с версткой журналов,
                     дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
                     как контент впоследствии будет выглядеть на готовой странице, чтобы
                     увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
-                <div class="call">
-                    <p>Наш номер: +3856 0 99 66 65</p>
-                    <button>Заказать звонок</button>
+                <div class="clinic__call">
+                    <p class="clinic__number">Наш номер: +3856 0 99 66 65</p>
+                    <button class="button">Заказать звонок</button>
                 </div>
             </div>
             <div class="clinic">
-                <div class="logo_name">
-                    <img src="img/Logo_clinic.png" alt="clinic_name">
+                <div class="clinic__logo-name">
+                    <img src="img/Logo_clinic.png" alt="clinic_name" class="clinic__logo">
                     <h3>Название клиники</h3>
                     <p>Ленинский проспект, д. 160, Ленинский проспект</p>
                 </div>
-                <p class="text">Что такое текст «рыба» знают все, кто работает с версткой журналов,
+                <p class="clinic__text">Что такое текст «рыба» знают все, кто работает с версткой журналов,
                     дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
                     как контент впоследствии будет выглядеть на готовой странице, чтобы
                     увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
-                <div class="call">
-                    <p>Наш номер: +3856 0 99 66 65</p>
-                    <button>Заказать звонок</button>
+                <div class="clinic__call">
+                    <p class="clinic__number">Наш номер: +3856 0 99 66 65</p>
+                    <button class="button">Заказать звонок</button>
                 </div>
             </div>
             <div class="clinic">
-                <div class="logo_name">
-                    <img src="img/Logo_clinic.png" alt="clinic_name">
+                <div class="clinic__logo-name">
+                    <img src="img/Logo_clinic.png" alt="clinic_name" class="clinic__logo">
                     <h3>Название клиники</h3>
                     <p>Ленинский проспект, д. 160, Ленинский проспект</p>
                 </div>
-                <p class="text">Что такое текст «рыба» знают все, кто работает с версткой журналов,
+                <p class="clinic__text">Что такое текст «рыба» знают все, кто работает с версткой журналов,
                     дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
                     как контент впоследствии будет выглядеть на готовой странице, чтобы
                     увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
-                <div class="call">
-                    <p>Наш номер: +3856 0 99 66 65</p>
-                    <button>Заказать звонок</button>
+                <div class="clinic__call">
+                    <p class="clinic__number">Наш номер: +3856 0 99 66 65</p>
+                    <button class="button">Заказать звонок</button>
                 </div>
             </div>
             <div class="clinic">
-                <div class="logo_name">
-                    <img src="img/Logo_clinic.png" alt="clinic_name">
+                <div class="clinic__logo-name">
+                    <img src="img/Logo_clinic.png" alt="clinic_name" class="clinic__logo">
                     <h3>Название клиники</h3>
                     <p>Ленинский проспект, д. 160, Ленинский проспект</p>
                 </div>
-                <p class="text">Что такое текст «рыба» знают все, кто работает с версткой журналов,
+                <p class="clinic__text">Что такое текст «рыба» знают все, кто работает с версткой журналов,
                     дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
                     как контент впоследствии будет выглядеть на готовой странице, чтобы
                     увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
-                <div class="call">
-                    <p>Наш номер: +3856 0 99 66 65</p>
-                    <button>Заказать звонок</button>
+                <div class="clinic__call">
+                    <p class="clinic__number">Наш номер: +3856 0 99 66 65</p>
+                    <button class="button">Заказать звонок</button>
                 </div>
             </div>
-            <button class="all">Все кабинеты</button>
+            <button class="clinics__button">Все кабинеты</button>
         </div>
     </main>
-    <section class="feedback">
-        <article class="article-comments borders">
+    <section class="interesting-bg">
+        <article class="article-reviews">
             <div class="article">
                 <h3>Последние статьи</h3>
-                <div class="article_img">
-                    <img src="img/article.png" alt="article-img">
-                    <p>
+                <div class="article__main">
+                    <img src="img/article.png" alt="article-img" class="article__logo">
+                    <p class="article-reviews__text">
                         Что такое текст «рыба» знают все, кто работает с версткой журналов, дизайном и разработкой
                         сайтов. Этот текст служит для демонстрации того, как контент впоследствии будет выглядеть на
                         готовой странице, чтобы увидеть, правильно ли размещаются абзацы, отступы, хорошо ли смотрятся
@@ -197,38 +197,38 @@
                         текста есть один неоспоримый плюс –
                     </p>
                 </div>
-                <div class="next">
-                    <div class="arrows">
+                <div class="leaf">
+                    <div class="leaf__arrows">
                         <a href="#" class="left"><img src="img/arrow-left.png" alt="left"></a>
                         <a href="#" class="right"><img src="img/arrow-right.png" alt="right"></a>
                     </div>
-                    <button>Читать подробнее</button>
+                    <button class="button">Читать подробнее</button>
                 </div>
             </div>
             <div class="reviews">
                 <h3>Отзывы о нас</h3>
-                <p>
+                <p class="article-reviews__text reviews__text">
                 Что такое текст «рыба» знают все, кто работает с версткой журналов, дизайном и разработкой сайтов. Этот текст служит для демонстрации того, как контент впоследствии будет выглядеть на готовой странице, чтобы увидеть, правильно ли размещаются абзацы, отступы, хорошо ли смотрятся шрифты. Такие рыбные тексты, как правило, не несут никакой смысловой нагрузки.
                     <br><br>
                 На моменте создания макета у дизайнера нет готовых текстов, поэтому генерируется некий демонстрационный текст. Некоторые студии предпочитают писать такой текст самостоятельно, но чаще используются готовые тексты, созданные программой – генератором текста. Более того, у такого текста есть один неоспоримый плюс –
                 </p>
-                    <div class="rev_next arrows">
+                    <div class="leaf__arrows reviews__arrows">
                         <a href="#" class="left"><img src="img/arrow-left.png" alt="left"></a>
                         <a href="#" class="right"><img src="img/arrow-right.png" alt="right"></a>
                     </div>
             </div>
         </article>
     </section>
-    <section class="callback2">
-        <div class="form borders">
+    <section class="recall">
+        <div class="recall_position">
             <figure class="logo">
                 <img src="img/Logo.png" alt="logo">
                 <figcaption class="name_logo">Единый <br>Центр Записи</figcaption>
             </figure>
-            <form action="#">
-                <label for="callback">Заказать звонок:</label>
-                <input type="tel" name="tel_number" id="callback" placeholder="+380">
-                <button>Отправить</button>
+            <form action="#" class="order-form">
+                <label for="order-call" class="order-call">Заказать звонок:</label>
+                <input class="form-input" type="tel" name="tel_number" id="order-call" placeholder="+380">
+                <button class="form-button">Отправить</button>
             </form>
         </div>
     </section>

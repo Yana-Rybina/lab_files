@@ -7,10 +7,6 @@
     padding-top: 10px;
 }
 
-.borders {
-    margin: 0 8%;
-}
-
 button:hover {
     opacity: 0.7;
     cursor: pointer;
@@ -18,6 +14,7 @@ button:hover {
 
 .container {
     display: flex;
+    margin: 0 8%;
 }
 
 .logo {
@@ -46,11 +43,11 @@ button:hover {
     margin-left: auto;
 }
 
-.tel {
+.nav__tel {
     text-align: right;
 }
 
-.tel a {
+.nav__a {
     text-decoration: none;
     color: white;
     font-size: 16px;
@@ -58,32 +55,30 @@ button:hover {
     font-weight: bold;
 }
 
-.tel a::before {
+.nav__a::before {
     content: url(../img/phone-square.png);
     margin-right: 10px;
 }
 
-nav ul {
+.menu .menu__list {
     padding-inline-start: 0;
-}
-nav .menu {
     display: flex;
     box-sizing: border-box;
 }
-nav a {
+.menu a {
     text-decoration: none;
     font-family: Calibri, sans-serif;
     font-size: 16px;
     color: #494848;
     padding-left: 15px;
 }
-nav li {
+.menu .menu__item {
     list-style-type: none;
 }
-nav .main {
+.menu .menu__main {
     color: white;
 }
-nav .arrow::after {
+.menu .menu__arrow::after {
     content: "↓";
 }
 
@@ -102,15 +97,16 @@ nav .arrow::after {
 .banner {
     height: 480px;
     position: relative;
+    margin: 0 8%;
 }
 
-.doc {
+.banner__logo {
     height: 480px;
     width: 740px;
     float: left;
 }
 
-.info {
+.banner__text {
     position: absolute;
     text-align: right;
     top: 100px;
@@ -123,7 +119,7 @@ nav .arrow::after {
     width: 730px;
 }
 
-.callback {
+.banner__big-text {
     font-family: "Trebuchet MS", sans-serif;
     font-size: 24px;
     text-align: right;
@@ -132,28 +128,29 @@ nav .arrow::after {
     margin-bottom: 60px;
 }
 
-.banner form {
+.banner__form {
     display: flex;
     justify-content: flex-end;
 }
 
-.banner input, button {
+.form-input, .form-button {
     border-radius: 3px;
     font-size: 16px;
     padding: 8px;
 }
 
-.banner input {
+.form-input {
     width: 150px;
     border: 0;
 }
 
-.banner button {
+.form-button {
     border: #1d7373;
     background-color: #1d7373;
 }
 
 .advantages {
+    margin: 0 8%;
     display: flex;
     text-align: center;
     font-family: "Trebuchet MS", sans-serif;
@@ -161,18 +158,18 @@ nav .arrow::after {
     margin-bottom: 25px;
 }
 
-.advantages p {
+.advantages__text {
     font-size: 12px;
     line-height: 1.8em;
     text-align: center;
 }
 
-.box {
+.advantages__block {
     box-sizing: content-box;
     padding: 45px;
 }
 
-.icon_advan {
+.advantages__icon {
     width: 55px;
     height: 55px;
     background: url("../img/icons.png") no-repeat center;
@@ -182,44 +179,45 @@ nav .arrow::after {
     padding: 5px;
 }
 
-.advan_treat {
+.treat {
     background-color: #1d7373;
 }
 
-.advan_treat .icon_advan {
+.treat .advantages__icon {
     background-position: 15px 8px;
 }
 
-.advan_help {
+.help {
     background-color: #009999;
 }
 
-.advan_help .icon_advan {
+.help .advantages__icon {
     background-position: 10px -45px;
 }
 
-.advan_staff {
+.staff {
     background-color: #33cccc;
 }
 
-.advan_staff .icon_advan {
+.staff .advantages__icon {
     background-position: 12px -105px;
 }
 
-.advan_doc {
+.doc {
     background-color: #5ccccc;
 }
 
-.advan_doc .icon_advan {
+.doc .advantages__icon {
     background-position: 13px -162px;
 }
 
 .clinics {
+    margin: 0 8%;
     font-family: Calibri, sans-serif;
     margin-bottom: 70px;
 }
 
-#txt_1 {
+.tab-content {
     border: 2px solid #e2e6e8;
     border-radius: 5px;
     /*border-top: 0;*/
@@ -236,17 +234,16 @@ nav .arrow::after {
     margin: 0 auto;
 }
 
-.tabs input {
+.tabs__input {
     display: none;
 }
 
-.tabs div {
-    display: none;
-    padding: 12px;
-    border: 2px solid #e2e6e8;
-}
-
-.tabs label {
+/*.tabs div {
+  display: none;
+  padding: 12px;
+  border: 2px solid #e2e6e8;
+}*/
+.tabs__name {
     display: inline-block;
     padding: 10px;
     text-align: center;
@@ -260,7 +257,7 @@ nav .arrow::after {
     border-radius: 5px;
 }
 
-#tab_1:checked ~ #txt_1 {
+#tab_1:checked ~ .tab-content {
     display: block;
 }
 
@@ -271,16 +268,16 @@ nav .arrow::after {
     margin-bottom: 25px;
 }
 
-.logo_name img {
+.clinic__logo {
     float: left;
 }
 
-.logo_name h3, p {
+.clinic__logo-name h3, p {
     text-align: right;
     margin: 0;
 }
 
-.logo_name h3 {
+.clinic__logo-name h3 {
     color: #36d792;
     font-size: 22px;
     font-weight: bold;
@@ -288,30 +285,30 @@ nav .arrow::after {
     margin-top: 10px;
 }
 
-.logo_name p {
+.clinic__logo-name p {
     color: #92cde2;
     font-size: 12px;
     font-style: italic;
 }
 
-.clinic .text {
+.clinic__text {
     text-align: left;
     padding-top: 35px;
     padding-bottom: 15px;
     font-size: 16px;
 }
 
-.clinic .call {
+.clinic__call {
     display: flex;
     justify-content: space-between;
 }
 
-.call p {
+.clinic__number {
     font-weight: bold;
     align-self: center;
 }
 
-.call button, .next button {
+.button {
     background-color: #ff9640;
     color: white;
     border: 0;
@@ -319,7 +316,7 @@ nav .arrow::after {
     padding: 10px;
 }
 
-.all {
+.clinics__button {
     background-color: #ff7400;
     color: white;
     border: 0;
@@ -328,16 +325,16 @@ nav .arrow::after {
     margin: 25px 550px;
 }
 
-.feedback {
+.interesting-bg {
     background-color: #b0ebd1;
 }
 
-.article-comments {
+.article-reviews {
+    margin: 0 8%;
     display: flex;
     padding: 10px 15px;
 }
-
-h3 {
+.article-reviews h3 {
     font-size: 30px;
     font-family: Calibri, sans-serif;
     font-style: italic;
@@ -347,17 +344,17 @@ h3 {
     padding-bottom: 10px;
 }
 
-.article_img {
+.article__main {
     width: 700px;
     display: flex;
 }
 
-.article_img img {
+.article__logo {
     width: 340px;
     height: 220px;
 }
 
-.article p, .reviews p {
+.article-reviews__text {
     font-size: 15px;
     font-family: Calibri, sans-serif;
     text-align: left;
@@ -366,21 +363,21 @@ h3 {
     line-height: 0.9em;
 }
 
-.next {
+.leaf {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 40px;
 }
 
-.arrows {
+.leaf__arrows {
     display: flex;
     width: 100px;
     justify-content: space-between;
     align-self: center;
 }
 
-.arrows .left, .right {
+.left, .right {
     background-color: #cbd4e6;
     width: 40px;
     height: 30px;
@@ -394,42 +391,37 @@ h3 {
     margin-left: 100px;
 }
 
-.reviews p {
+.reviews__text {
     padding: 0;
 }
 
-.rev_next {
+.reviews__arrows {
     margin-left: 250px;
     margin-top: 40px;
 }
 
-.callback2 {
+.recall {
     background-color: #3f92d2;
 }
 
-.form {
+.recall_position {
+    margin: 0 8%;
     display: flex;
     justify-content: space-between;
     padding: 35px 15px;
 }
 
-.form input, button {
-    border-radius: 3px;
-    font-size: 16px;
-    padding: 8px;
-}
-
-.form input {
+.form-input {
     width: 150px;
     border: 0;
 }
 
-.form button {
+.form-button {
     border: #1d7373;
     background-color: #1d7373;
 }
 
-.form label {
+.order-call {
     align-self: center;
     color: white;
     font-size: 22px;
@@ -439,11 +431,11 @@ h3 {
     letter-spacing: 1.2px;
 }
 
-.form form, .logo {
+.order-form, .logo {
     align-self: center;
 }
 
-.form form {
+.order-form {
     display: flex;
     justify-content: flex-end;
 }
