@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script
+  		src="https://code.jquery.com/jquery-3.4.1.js"
+  		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  		crossorigin="anonymous"></script>
+  		<style>
+  			#slides img{display: none;}
+  			#slides img.first{display: block;}
+  			#slides{float: left;}
+  			.buttons{
+  				display: flex;
+  				flex-direction: column;
+				margin-top: 200px;
+				margin-left: 800px;
+				position: fixed;
+  			}
+  		</style>
+	<title>jQ</title>
+</head>
+<body>
+	<h3>Слайды</h3>
+	<div id="slides">
+		<img src="https://klike.net/uploads/posts/2019-01/1547365376_1.jpg" class="first">
+		<img src="https://klike.net/uploads/posts/2019-01/medium/1547365386_2.jpg">
+		<img src="https://klike.net/uploads/posts/2019-01/medium/1547365358_3.jpg">
+		<img src="https://klike.net/uploads/posts/2019-01/medium/1547365356_5.jpg" class="last">
+	</div>
+	<div class="buttons">
+			<button id="prev">Пред.</button>
+			<button id="next">След.</button>
+	</div>
+	<script type="text/javascript">
+		$(function() {
+			var current=$("div#slides img").first();
+			$('#next').click(function(){
+				$(current).not('.last').hide(1000, function(){
+					current=$(current).next('img');
+					$(current).show(1000);
+				});
+			});
+			$('#prev').click(function(){
+				$(current).not('.first').hide(1000, function(){
+					current=$(current).prev('img');
+					$(current).show(1000);
+				});
+			});
+		});
+	</script>
+</body>
+</html>
